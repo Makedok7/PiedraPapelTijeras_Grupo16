@@ -70,32 +70,44 @@ export default function Juego() {
     }
 
     return (
-        <div>
+        
+        <div class="row text-center">
             {Nav()}
-            <p> click para jugar</p>
-            <button onClick={() => jugar()}>
-                Jugar
-            </button>
+            <div class="row">
+            <h1>El ganador es: {resultado}</h1>
+            <p>puntaje jugador1:{countJugador1}</p>
+            <p>puntaje jugador2:{countJugador2}</p>
+            </div>
+            <div class="col">
             <div>
-                jugador1
+                Jugador1
                 <img src="../images/piedra.png" id="jugador1" alt="" key="0" />
             </div>
             <div>
                 {/* Aqui es posible cambiar la eleccion del jugador1 haciendo click en la imagen, 
                 se llama a la funcion cambiarJugador1 para pasar el src de la imagen asi como key que sirve
                 para pasar la eleccion para la logica del juego*/}
-                cambiar jugador 1
+                Cambiar jugador 1
                 <img src="../images/piedra.png" id="eleccion" alt='piedra' key="0" onClick={() => cambiarJugador1("../images/piedra.png", 0, "piedra")} />
                 <img src="../images/tijera.png" id="eleccion" alt='tijeras' key="1" onClick={() => cambiarJugador1("../images/tijera.png", 1, "tijera")} />
                 <img src="../images/papel.png" id="eleccion" alt='papel' key="2" onClick={() => cambiarJugador1("../images/papel.png", 2, "papel")} />
             </div>
-            <div>
-                jugador2
-                <img src="../images/piedra.png" id="jugador2" alt="jugador2" />
             </div>
-            <p>el resultado es {resultado}</p>
-            <p>puntaje jugador1:{countJugador1}</p>
-            <p>puntaje jugador2:{countJugador2}</p>
+            <div class="col">
+            <p> Click para jugar</p>
+            <button onClick={() => jugar()}>
+                Jugar
+            </button>
+            
+            
+            
+            </div>
+            <div class="col">
+                <div>
+                    Jugador 2
+                    <img src="../images/piedra.png" id="jugador2" alt="jugador2" />
+                </div>
+            </div>
         </div>
     )
 }

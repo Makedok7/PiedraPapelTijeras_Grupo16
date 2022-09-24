@@ -9,10 +9,10 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={ <Home/> }/>;
-        <Route path='/juego' element={ <Juego/> }/>;
-        <Route path='/desarrolladores' element={ <Desarrolladores/> }/>;
+        <Route path='/' element={<Home />} />;
+        <Route path='/juego' element={<Juego />} />;
+        <Route path='/desarrolladores' element={<Desarrolladores />} />;
       </Routes>
-    </Router>
+    </Router>  
   );
 }

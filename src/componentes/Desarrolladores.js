@@ -1,4 +1,5 @@
 import { Route } from "react-router-dom"
+import Nav from './Nav';
 
 export default function Desarrolladores() {
     const users = [
@@ -41,6 +42,7 @@ export default function Desarrolladores() {
     ]
     return (
         <>
+            {Nav()}
             <h1>Desarrolladores</h1>
 
             {users.map((user, i) => {
@@ -52,6 +54,7 @@ export default function Desarrolladores() {
                 );
             }
             )}
+            
         </>
     )
 

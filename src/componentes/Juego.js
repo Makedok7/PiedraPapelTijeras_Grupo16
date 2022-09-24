@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Nav from './Nav'
 
 export default function Juego() {
     const [countJugador1, setCountJugador1] = useState(0);
@@ -70,6 +71,7 @@ export default function Juego() {
 
     return (
         <div>
+            {Nav()}
             <p> click para jugar</p>
             <button onClick={() => jugar()}>
                 Jugar
@@ -94,7 +96,6 @@ export default function Juego() {
             <p>el resultado es {resultado}</p>
             <p>puntaje jugador1:{countJugador1}</p>
             <p>puntaje jugador2:{countJugador2}</p>
-
         </div>
     )
 }

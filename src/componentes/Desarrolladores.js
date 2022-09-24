@@ -5,7 +5,7 @@ export default function Desarrolladores() {
     const users = [
         {
             id: 1,
-            name: 'Abalos, alan Nicoloas',
+            name: 'Abalos, Alan Nicolas',
             ima: 'https://robohash.org/user1',
             description: 'hola tengo x años soy estudiante de la unju sueño con hacer videojuegos '
         },

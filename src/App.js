@@ -2,7 +2,8 @@
 import Home from './componentes/Home.js';
 import Juego from './componentes/Juego.js';
 import Desarrolladores from './componentes/Desarrolladores.js';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import { users } from './componentes/Desarrolladores.js';
 
 export default function App() {
   return (

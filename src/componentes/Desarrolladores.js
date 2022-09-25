@@ -57,11 +57,9 @@ export default function Desarrolladores() {
                             </ul>
                         </section>
                     </div>
-
                     );
                 })}
             </div>
-
         </>
     )
 

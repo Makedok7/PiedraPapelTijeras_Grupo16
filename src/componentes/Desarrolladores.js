@@ -43,11 +43,8 @@ export default function Desarrolladores() {
     ]
     return (
         <>
-
-            <h1 className="title">Desarrolladores</h1>
-
             {Nav()}
-
+            <h1 className="title">Desarrolladores</h1>
             <div class="contenedor">
 
                 {users.map((user, i) => {

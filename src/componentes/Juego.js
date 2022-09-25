@@ -71,14 +71,14 @@ export default function Juego() {
 
     return (
         
-        <div class="row text-center">
+        <div className="row text-center">
             {Nav()}
-            <div class="row">
+            <div className="row">
             <h1>El ganador es: {resultado}</h1>
             <p>puntaje jugador1:{countJugador1}</p>
             <p>puntaje jugador2:{countJugador2}</p>
             </div>
-            <div class="col">
+            <div className="col">
             <div>
                 Jugador1
                 <img src="../images/piedra.png" id="jugador1" alt="" key="0" />
@@ -93,16 +93,13 @@ export default function Juego() {
                 <img src="../images/papel.png" id="eleccion" alt='papel' key="2" onClick={() => cambiarJugador1("../images/papel.png", 2, "papel")} />
             </div>
             </div>
-            <div class="col">
+            <div className="col">
             <p> Click para jugar</p>
             <button onClick={() => jugar()}>
                 Jugar
             </button>
-            
-            
-            
             </div>
-            <div class="col">
+            <div className="col">
                 <div>
                     Jugador 2
                     <img src="../images/piedra.png" id="jugador2" alt="jugador2" />

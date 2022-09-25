@@ -83,24 +83,25 @@ export default function Juego() {
                 Jugador1
                 <img src="../images/piedra.png" id="jugador1" alt="" key="0" />
             </div>
+            <h3>
+            Cambiar jugador 1
+            </h3>
             <div>
                 {/* Aqui es posible cambiar la eleccion del jugador1 haciendo click en la imagen, 
                 se llama a la funcion cambiarJugador1 para pasar el src de la imagen asi como key que sirve
                 para pasar la eleccion para la logica del juego*/}
-                Cambiar jugador 1
+                
+                
                 <img src="../images/piedra.png" id="eleccion" alt='piedra' key="0" onClick={() => cambiarJugador1("../images/piedra.png", 0, "piedra")} />
                 <img src="../images/tijera.png" id="eleccion" alt='tijeras' key="1" onClick={() => cambiarJugador1("../images/tijera.png", 1, "tijera")} />
                 <img src="../images/papel.png" id="eleccion" alt='papel' key="2" onClick={() => cambiarJugador1("../images/papel.png", 2, "papel")} />
             </div>
             </div>
             <div class="col">
-            <p> Click para jugar</p>
-            <button onClick={() => jugar()}>
+                <p> Click para jugar</p>
+                <button onClick={() => jugar()}>
                 Jugar
-            </button>
-            
-            
-            
+                </button> 
             </div>
             <div class="col">
                 <div>

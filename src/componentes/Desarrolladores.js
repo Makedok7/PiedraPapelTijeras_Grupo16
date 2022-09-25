@@ -7,7 +7,7 @@ export default function Desarrolladores() {
             id: 1,
             name: 'Abalos, Alan Nicolas',
             ima: 'https://robohash.org/user1',
-            description: 'hola tengo x años soy estudiante de la unju sueño con hacer videojuegos '
+            description: 'hola tengo 22 años soy estudiante de la unju sueño con hacer videojuegos '
         },
         {
             id: 2,

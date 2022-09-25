@@ -1,5 +1,6 @@
 import { Route } from "react-router-dom"
 import Nav from './Nav';
+import "./DesarrolladoresStyle.css"
 
 export default function Desarrolladores() {
     const users = [
@@ -43,18 +44,24 @@ export default function Desarrolladores() {
     return (
         <>
             {Nav()}
-            <h1>Desarrolladores</h1>
+            <h1 className="title">Desarrolladores</h1>
+            <div class="contenedor">
 
-            {users.map((user, i) => {
-                return (<div key={i}>
-                    <h3>{user.name}</h3>
-                    <img src={user.ima} />
-                    <p>{user.description}</p>
-                </div>
-                );
-            }
-            )}
-            
+                {users.map((user, i) => {
+                    return (<div key={i}>
+                        <section className="list">
+                            <ul>
+                                <h3>{user.name}</h3>
+                                <img src={user.ima} />
+                                <p>{user.description}</p>
+                            </ul>
+                        </section>
+                    </div>
+
+                    );
+                })}
+            </div>
+
         </>
     )
 

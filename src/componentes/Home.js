@@ -1,19 +1,45 @@
-import { Link } from 'react-router-dom';
-import Nav from './Nav';
-
+import Nav from './Nav'
+import "./styles/inicio-style.css"
+import { Link } from 'react-router-dom'
 
 export default function Home() {
     return (
-        <div className='bg-dark'style={{height:"800px"}}>
+        <div className='bg-dark' style={{ height: "800px" }}>
             {Nav()}
-            <div className="container ">
-                <h1 className="text-center text-info display-1" style={{fontWeight:"bold",fontStyle:"italic",fontFamily:"sans-serif"}}>HOME</h1>
-                <img className='img-thumbnail rounded mx-auto d-block py-3 ' src='./images/portada.jpg' alt='portada'/>
-                <Link to='/juego' style={{textDecoration:"none"}}>
-                    <h2 className="text-center text-info py-5 text-decoration-none" style={{fontStyle:"oblique",fontFamily:"fantasy"}}>Haz click para jugar!</h2>
-                </Link>
+            <div id="div1" className="container">
+                <div className="Titulo" id="titulo">
+                    <header>
+                        <h1>Juego Grupo 16</h1>
+                    </header>
+                </div>
+                <dl id="nav">
+                    <dt className="nav-item">Ábalos Alan Nicolás</dt>
+                    <dt className="nav-item">Cabrera Fabricio Gastón</dt>
+                    <dt className="nav-item">Córdoba Juan Brian Joel</dt>
+                    <dt className="nav-item">Lozano Rodrigo Emanuel</dt>
+                    <dt className="nav-item">Mecedo Facundo</dt>
+                    <dt className="nav-item">Palacios Carlos Javier</dt>
+                </dl>
+                <div id="juego" >
+                    <h1>Piedra Papel Tijeras</h1>
+                    <Link to='/juego' className='text-decoration-none'>
+                        <button className="boton">Iniciar Juego</button>
+                    </Link>
+                </div>
+                <div className="row ">
+                    <section id="img1" className='col'>
+                        <img src="./images/LogoJuego.jpeg" width="350" height="350" alt="LogoJuego" className='img-fluid rounded' />
+                    </section>
+                    <aside id="reglas" className='col '>
+                        <h2>Reglas</h2>
+                        <ul className='list-inline'>
+                            <li >Piedra gana a Tijeras</li>
+                            <li>Tijeras gana a Papel</li>
+                            <li>Papel gana a Piedra</li>
+                        </ul>
+                    </aside>
+                </div>
             </div>
         </div>
-
     )
 }

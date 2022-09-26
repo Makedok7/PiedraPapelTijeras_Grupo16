@@ -8,38 +8,39 @@ export default function Desarrolladores() {
             id: 1,
             name: 'Abalos, Alan Nicolas',
             ima: 'https://robohash.org/user1',
-            description: 'hola tengo 22 años soy estudiante de la unju sueño con hacer videojuegos '
+            description: 'hola tengo 22 años soy estudiante de la unju sueño con hacer videojuegos.'
 
         },
         {
             id: 2,
             name: 'Cabrera, Fabricio Gaston',
             ima: 'https://robohash.org/user2',
-            description: 'Fan del Anime y los juegos Hack and Slash, vicioso de toda la vida'
+            description: 'Fan del Anime y los juegos Hack and Slash, vicioso de toda la vida.'
         },
         {
             id: 3,
             name: 'Cordoba, Juan Brian Joel',
             ima: 'https://robohash.org/user3',
-            description: 'Me gusta el asado, hacer musica y jugar a la pelota con amigos los fines de semana'
+            description: 'Me gusta el asado, hacer musica y jugar a la pelota con amigos los fines de semana.'
         },
         {
             id: 4,
             name: 'Macedo, Facundo Emanuel',
             ima: 'https://robohash.org/user4',
-            description: 'hola tengo x años soy estudiante de la unju sueño con hacer videojuegos '
+            description: 'Hola, soy Facundo Macedo, tengo 24 años, vivía en San Miguel de Tucumán y estudié arte en la UNT, ahora estoy interesado en el diseño y desarrollo de videojuegos.'
         },
         {
             id: 5,
             name: 'Palacios, Carlos Javier',
             ima: 'https://robohash.org/user5',
-            description: 'hola tengo x años soy estudiante de la unju sueño con hacer videojuegos '
+            description: 'Mi nombre es Carlos Javier Palacios, me gusta escribir, crear historias, jugar y eventualmente programar.'
         },
         {
             id: 6,
             name: 'Sosa, Rodrigo Emanuel Lozano',
             ima: 'https://robohash.org/user6',
-            description: 'hola tengo x años soy estudianto de la unju sueño con hacer videojuegos '
+            description: 'Hola, soy Rodrigo, soy tranquilo, me gusta la programación y los videojuegos.'
+
         }
     ]
     return (

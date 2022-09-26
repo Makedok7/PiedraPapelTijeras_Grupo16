@@ -77,7 +77,7 @@ export default function Juego() {
         <div className="row text-center">
             {Nav()}
             <div className="color_3 row">
-            <h1>El ganador es: {resultado}</h1>
+            <h1>El ganador es: <div>{resultado}</div></h1>
             
             </div>
             <div className="color_1 col">
@@ -111,6 +111,7 @@ export default function Juego() {
                     <img src="../images/piedra.png" id="jugador2" alt="jugador2" />
                 </div>
             </div>
+            <div className='color_4 row'> </div>
         </div>
     )
 }
